@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>家长教育焦虑水平分析|家长教育焦虑研究</title>
+    <link rel="shortcut icon" href="images/logo1.png" />
+
+    <link href="static/fishstyle.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*=================================================== subpage ================================================*/
+        #bodyContent {
+            font-family: Arial, "微软雅黑";
+            font-size: 12px;
+            color: #fff;
+            /* background: #fff; */
+        }
+
+        #bodyContent .main {
+            width: 70%;
+            position: relative;
+            left: 0%;
+            right: 6%;
+            float: left;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            text-align: justify;
+            margin: 0.9em 0em;
+        }
+
+        #bodyContent .main .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        /* main0 */
+        #bodyContent .main0 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 2550px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main0 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main0 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main0 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main0 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main0 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!--======================================== navigation、progess bar ============================================-->
+    <script src="loadHeader.js"></script>
+
+
+    <!--======================================== header background  ================================================-->
+    <div id="background">
+        <img class="filter" src="images/bg1.jpg">
+        <div class="bg-text">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none">
+                成果展示
+            </h1>
+        </div>
+    </div>
+
+
+    <!--================================================= sidebar ===================================================-->
+    <div class="pagenav">
+        <div onclick="goTo(document.getElementById('menu2'))"><span id="subtitle2">家长教育焦虑水平问卷分析</span></div>
+        <div onclick="goTo(document.getElementById('menu2-1'))"><span id="subsubtitle3">&emsp;家长教育焦虑得分情况</span>
+        </div>
+        <div onclick="goTo(document.getElementById('menu2-2'))"><span id="subsubtitle4">&emsp;矩阵量表结果分析</span>
+        </div>
+        <div onclick="goTo(document.getElementById('menu2-3'))"><span id="subsubtitle5">&emsp;结论</span></div>
+       
+        <div onclick="goTo(document.getElementById('menu1'))"><span id="subtitle1">附录：家长教育焦虑水平问卷</span></div>
+        <div onclick="goTo(document.getElementById('menu1-1'))"><span id="subsubtitle1">&emsp;背景信息题</span></div>
+        <div onclick="goTo(document.getElementById('menu1-2'))"><span id="subsubtitle2">&emsp;矩阵量表题</span></div>
+    </div>
+
+    <script>
+        var TopDistance = 130;
+        let elements = [document.getElementById('menu1'),
+        document.getElementById('menu1-1'),
+        document.getElementById('menu1-2'),
+        document.getElementById('menu2'),
+        document.getElementById('menu2-1'),
+        document.getElementById('menu2-2'),
+        document.getElementById('menu2-3')];
+        window.goTo = function (el) {
+            document.documentElement.scrollTop += el.getBoundingClientRect().top - TopDistance;
+        }
+    </script>
+
+
+    <!--=================================================== 正文 ====================================================-->
+    <div id="bodyContent">
+        <div class="main clearfix">
+            <div class="title subtitle" id="menu2">家长教育焦虑水平问卷分析</div>
+            <div class="words">
+                &emsp;&emsp;为更好地研究家长不同程度的教育焦虑对学生的积极和消极影响，展开问卷调查研究小学至高中学段学生家长的教育焦虑程度水平。本次前调问卷共发放88份，有效问卷88份。本次调查问卷共设计20道小题，其中背景信息题4道，矩阵量表题16道，每道小题满分为5分。
+            </div>
+            <div class="title subsubtitle" id="menu2-1">1. 家长教育焦虑得分情况</div>
+            <div class="words">
+                &emsp;&emsp;家长教育焦虑平均得分为41.67（总分80），即家长教育焦虑平均程度为中等偏高教育焦虑。大部分家长的教育焦虑程度为中等水平。数据显示，有16名家长教育焦虑得分在0-30分（即低教育焦虑水平），有58名家长得分在31-50分（即中教育焦虑水平），有14名家长得分在51-80分（即高教育焦虑水平）。并且家长教育焦虑程度水平较集中，但极差较大。数据显示，样本得分标准差为9.84，最高程度教育焦虑家长得分为77分，最低程度教育焦虑得分为24分。
+            </div>
+            <div class="pic">
+                <table>
+                    <tr>
+                        <td><img src="images/pre1.jpg" style="max-width: 400px; width: 90%;"></td>
+                        <td><img src="images/pre2.jpg" style="max-width: 400px; width: 90%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="picbartitle">
+                图1：家长教育焦虑得分图
+            </div>
+            
+            <div class="title subsubtitle" id="menu2-2">2. 矩阵量表结果分析</div>
+            <div class="words">
+                （1）学习、兴趣班方面<br>
+                &emsp;&emsp;第6、7、9、10、11、17、18小题与孩子的学习、兴趣班方面相关，平均得分为2.70。其中“关注孩子的成绩，干预孩子的学习状态”平均分最高，为4.17分，表明大部分家长对孩子的学习成绩焦虑程度更高，会主动了解孩子的学习情况、学习态度，通过为孩子制定学习计划、报名补习班等方式干预孩子的学习。
+            </div>
+            <div class="words">
+                （2）升学、学校质量方面<br>
+                &emsp;&emsp;第12、13、14小题与孩子的升学、学校质量相关，是家长最关心、担心的问题，平均得分为3.03。其中“担心孩子不能升入理想学校”、“升学问题上干预孩子的选择”的平均分分别为3.08、3.36，表明大部分家长对孩子的升学问题焦虑程度更高。
+            </div>
+            <div class="words">
+                （3）同龄人比较<br>
+                &emsp;&emsp;第5、8、15小题与家长是否将孩子与同龄孩子比较相关，平均得分为2.45，表明部分家长会在成绩、努力程度等方面将孩子与同龄孩子对比，但不会过多担忧、焦虑孩子落后于朋友或他人。
+            </div>
+            <div class="words">
+                （4）家长教育焦虑的外显行为<br>
+                &emsp;&emsp;第16、19、20小题与家长对孩子教育焦虑在家长日常生活中的外显行为相关，平均得分为2.17，大部分家长表示“孩子的教育问题没有填满其生活”、“不会因为孩子的教育问题整夜失眠”，表明大部分家长对孩子的教育问题焦虑程度不高，未严重影响家长的日常生活。
+            </div>
+            <div class="pic">
+                <img src="images/pre3.jpg" style="max-width: 400px; width: 90%;">
+            </div>
+            <div class="picbartitle">
+                图2：矩阵量表各题平均得分折线图
+            </div>
+            
+            <div class="title subsubtitle" id="menu2-3">3. 结论</div>
+            <div class="words">
+                （1）大部分家长的教育焦虑程度为中等水平，家长教育焦虑平均程度为中等偏高教育焦虑；<br>
+                （2）大部分家长对孩子的升学问题、学习成绩的焦虑程度较高。<br>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="main0 ">
+            <div class="title subtitle" id="menu1">附录：家长教育焦虑水平问卷</div>
+            <div class="title subsubtitle" id="menu1-1">背景信息题</div>
+            <div class="words">
+                1.您是孩子的__?<br>
+                &emsp;&emsp;○父亲&emsp;&emsp;○母亲&emsp;&emsp;○其他监护人 ___<br><br>
+                2.您的年龄？<br>
+                &emsp;&emsp;○29岁及以下&emsp;&emsp;○30-35岁&emsp;&emsp;○36-40岁&emsp;&emsp;○41-45岁&emsp;&emsp;○46-50岁&emsp;&emsp;<br>
+                &emsp;&emsp;○51-55岁&emsp;&emsp;○56-60岁&emsp;&emsp;○61岁及以上<br><br>
+                3.您的文化程度？<br>
+                &emsp;&emsp;○小学&emsp;&emsp;○初中&emsp;&emsp;○高中/中专/职高&emsp;&emsp;○大专&emsp;&emsp;○大学本科&emsp;&emsp;<br>
+                &emsp;&emsp;○硕士&emsp;&emsp;○博士<br><br>
+                4.您孩子的学段？<br>
+                &emsp;&emsp;○小学一到三年级&emsp;&emsp;○小学四到五年级&emsp;&emsp;○小学六年级&emsp;&emsp;○初中一、二年级<br>
+                &emsp;&emsp;○初中三年级&emsp;&emsp;○高中一、二年级&emsp;&emsp;○高中三年级<br><br>
+            </div>
+            
+            <div class="title subsubtitle" id="menu1-2">矩阵量表题</div>
+            <div class="words">
+                5.我会经常将孩子与别人家的孩子进行比较，非常害怕ta落后于人。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                6.我给孩子报很多补习班，这样ta成绩才能提高。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                7.我为孩子报名很多兴趣班，会的多准没错。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                8.我经常向孩子了解孩子朋友的成绩，不太喜欢ta与成绩不好的孩子交朋友。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                9.我很少关注孩子的成绩，对孩子的学习状态也不会过多干预。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                10.我会经常催促、监督孩子学习，为ta制定学习计划。 <br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                11.我经常向孩子的老师了解孩子在学校中的表现。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                12.我会担心孩子学校的教师质量不高。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                13.我非常担心孩子不能升入理想学校。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                14.在升学问题上，对孩子的选择我不做干预。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                15.我非常担心孩子没有别人努力，未来会过的很差。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                16.我经常因为孩子反感、排斥我的管教而觉得头疼。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                17.我觉得孩子的学习态度不主动不自觉，对此我很焦虑。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                18.我觉得孩子在学校跟着老师学习就好，假期玩耍的开心最重要。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                19.我会因为孩子的教育问题，整夜失眠。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                20.孩子的教育问题几乎填满了我的生活。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+    <!--=============================================== bootsrtap ===================================================-->
+    <script src="/static/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--======================================= back to top、 footer ================================================-->
+    <script src="loadFooter.js"></script>
+</body>
+
+</html>

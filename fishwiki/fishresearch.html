@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>问题研究|家长教育焦虑研究</title>
+    <link rel="shortcut icon" href="images/logo1.png" />
+
+    <link href="static/fishstyle.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*=================================================== subpage ================================================*/
+        #bodyContent {
+            font-family: Arial, "微软雅黑";
+            font-size: 12px;
+            color: #fff;
+            /* background: #fff; */
+        }
+
+        #bodyContent .main {
+            width: 70%;
+            position: relative;
+            left: 0%;
+            right: 6%;
+            float: left;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            text-align: justify;
+            margin: 0.9em 0em;
+        }
+
+        #bodyContent .main .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main .words a {
+            font-family: "楷体";
+        }
+        
+        /* main0 */
+        #bodyContent .main0 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 1100px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main0 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main0 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main0 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main0 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main0 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        /* main1 */
+        #bodyContent .main1 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 100px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+
+        }
+
+        #bodyContent .main1 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main1 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main1 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main1 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main1 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!--======================================== navigation、progess bar ============================================-->
+    <script src="loadHeader.js"></script>
+
+
+    <!--======================================== header background  ================================================-->
+    <div id="background">
+        <img class="filter" src="images/bg1.jpg">
+        <div class="bg-text">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none">
+                问题研究
+            </h1>
+        </div>
+    </div>
+
+
+    <!--================================================= sidebar ===================================================-->
+    <div class="pagenav">
+        <div onclick="goTo(document.getElementById('menu1'))"><span id="subtitle1">研究背景</span></div>
+        <div onclick="goTo(document.getElementById('menu2'))"><span id="subtitle2">研究目标</span></div>
+        <div onclick="goTo(document.getElementById('menu3'))"><span id="subtitle3">研究内容</span></div>
+    </div>
+
+    <script>
+        var TopDistance = 130;
+        let elements = [document.getElementById('menu1'),
+        document.getElementById('menu2'),
+        document.getElementById('menu2-1'),
+        document.getElementById('menu2-2'),
+        document.getElementById('menu3')];
+        window.goTo = function (el) {
+            document.documentElement.scrollTop += el.getBoundingClientRect().top - TopDistance;
+        }
+    </script>
+
+
+    <!--=================================================== 正文 ====================================================-->
+    <div id="bodyContent">
+        <div class="main clearfix">
+            <div class="title subtitle" id="menu1">研究背景</div>  
+            <div class="words">
+                &emsp;&emsp;随着国内经济的逐步发展，国家教育水平的不断进步，国人对待教育愈发重视。在此条件下，越来越多的家长不仅开始追求高质量的教育，而且开始追求个性化的教育。在家长教育孩子的过程中，出于“望子成龙”的心态、对自己教育孩子的知识和能力缺乏信心以及身边环境影响等因素，有部分家长会出现教育焦虑。
+            </div>
+    
+            <div class="words">
+                &emsp;&emsp;同时，伴随着互联网与短视频及时资讯的发展，越来越多的“营销号”抓住了家长焦虑迷茫的心理，投其所好，贩卖焦虑。“鸡娃群”，“虎妈猫爸”等一度成为网络热词，生动形象刻画了焦虑的家长们。这一现象随时间的发展愈演愈烈，家长们开始陪读、买学区房、选补习班、买各种资料……这样的现象层出不穷，甚至就连义务教育阶段的孩子在本该快乐成长的年龄也要负重前行，在这样的背景下，国家出台了“双减”政策开始进行调整。
+            </div>
+    
+            <div class="words">
+                &emsp;&emsp;2021年7月24日，中共中央办公厅、国务院办公厅印发《关于进一步减轻义务教育阶段学生作业负担和校外培训负担的意见》，以下简称“双减”。在“双减”政策提出后，家长在子女的教育问题上有所缓解，但是也有其他的焦虑浮出了水面，在某种程度上甚至进一步强化了家长焦虑。家长不同程度地焦虑子女的学业成绩、焦虑升学问题，并且开始寻求不同的解决方法，而这些解决方法最终的落实者都是学生，而在义务教育阶段，这些学生往往被认为还需要父母的指引，不具备独立决策的能力，所以他们的所思所想往往被家长忽略。据此，本次研究以义务教育阶段学生为研究对象，构建双减政策下家长不同程度的教育焦虑对义务教育阶段学生的影响。
+            </div>
+        </div>
+
+        <br>
+
+        <div class="main0 ">
+            <div class="title subtitle" id="menu2">研究目标</div>
+            <div class="words">
+                &emsp;&emsp;本研究以中小学生以及他们的家长为研究对象，结合已有研究成果，首先对学生家长采用问卷调查的方式了解家长教育焦虑的整体情况，为访谈划分家长教育焦虑水平做准备；再选取典型学生和家长进行访谈，进一步了解当前家长教养焦虑程度，结合“双减”背景，从不同角度采用主题分析的方法分析建构家长不同程度教育焦虑对义务教育阶段学生的影响，最后结合所得出的结论，为家长了解教育焦虑对学生的影响以及选择正确的教养方式提出了相关建议，为学生缓解家长教育焦虑对自身的影响提出了相关建议。具体目标有：
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;一、整理家长教养焦虑的文献资料。了解当前研究，为之后的研究提供理论基础。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;二、采用问卷调查，了解家长教育焦虑的整体情况，为访谈划分家长教育焦虑水平做准备。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;三、进行访谈，分析家长不同程度教育焦虑对学生的影响，并分角度提出针对性建议。
+            </div>        
+        </div>
+
+        
+        <div class="main1">
+            <div class="title subtitle" id="menu3">研究内容</div>
+            <div class="words">
+                &emsp;&emsp;第一，文献梳理，了解当前教育焦虑的研究，为之后的研究提供理论基础。第二，通过问卷了解家长教育焦虑的整体情况。发放、回收问卷准确筛选有效数据，对家长教育焦虑水平进行描述性分析。根据数据分析结果，为访谈划分家长教育焦虑水平做准备。第三，通过访谈分析建构家长不同程度教育焦虑对学生的影响。在进行访谈之后，对受访学生与家长划分其教育焦虑水平，并转录编码，采用主题分析的方式分析建构家长不同程度教育焦虑对学生的影响。第四，针对研究结果得出结论与建议。根据所得访谈结果进行进一步归纳，得到家长教育焦虑影响模式图的结论。最后依据研究结论从不同主体提出实用性的建议或对策。
+            </div>
+            
+            <div class="pic">
+                <table>
+                    <tr>
+                        <td><img src="images/research1.png" style="max-width: 750px; width: 100%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="picbartitle">
+                图1：研究整体流程图
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+
+
+    <!--=============================================== bootsrtap ===================================================-->
+    <script src="/static/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--======================================= back to top、 footer ================================================-->
+    <script src="loadFooter.js"></script>
+</body>
+
+</html>
