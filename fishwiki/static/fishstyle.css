@@ -1,0 +1,358 @@
+/*============================================== background ==================================================*/
+#background>img {
+    width: 100%;
+}
+
+#background {
+    /* display: block; */
+    transform-style: preserve-3d;
+    perspective: 500px;
+    cursor: default;
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    margin-top: 120px;
+}
+
+.bg-text {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    max-width: 1800px;
+    width: 100%;
+    height: 130px;
+    transform-style: preserve-3d;
+    transition: all 0.1s;
+    opacity: 0.7;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+}
+
+.bg-h1 {
+    margin: 0;
+    font-size: 8.5rem;
+    font-weight: bold;
+    letter-spacing: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    color: #7c3e28;
+    text-shadow: -1px -1px #ffe4af, 
+                -2px -2px #ffe4af, 
+                -3px -3px #ffe4af, 
+                -4px -4px #ffe4af, 
+                -5px -5px #ffe4af, 
+                -6px -6px #ffe4af;
+}
+
+
+/*=================================================== sidebar=================================================*/
+.pagenav {
+    float: left;
+    width: 20%;
+    position: sticky;
+    margin-left: 40px;
+    top: 18vh;
+    line-height: 1.2;
+    transform: translateX(-10%);
+}
+
+.pagenav>div {
+    height: min(3vw, 53px);
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pagenav>div::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.pagenav>div>span {
+    font-family: SimSun, '宋体';
+    color: #685f53;
+    font-size: 18px;
+    vertical-align: middle;
+    transition: all 0.2s ease-out;
+}
+
+.pagenav>div>span:hover {
+    font-size: 20px;
+    transition: all 0.2s linear;
+    border-left: 2px solid #685f53;
+}
+
+.pagenav>div>span:active {
+    color: #99b9ba;
+    border-left: 2px solid #99b9ba;
+}
+
+
+/*=========================================== progress bar ===================================================*/
+.read_pro {
+    position: fixed;
+    top: 105px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.read_pro_inner {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: rgb(168, 210, 191);
+}
+
+
+/*================================================= navbar ===================================================*/
+.fixed-navbar {
+    background-image: linear-gradient(35deg, #Ffffff, #Ffffff, #f9dfc5, #f9dfc5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    /* Make the navbar fixed */
+    top: 0;
+    /* Stick it to the top of the viewport */
+    width: 100%;
+    /* Make it full-width */
+    z-index: 100;
+    /* Ensure it's above other content */
+}
+
+/* Style for the logo */
+.logo {
+    width: 105px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    margin-left: 50px;
+    /* Add some space between the logo and the menu items */
+}
+
+nav a {
+    color: rgb(79, 62, 47);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(79, 62, 47);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Adjust the positioning of the list items */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* Push the menu items to the right side */
+}
+
+/* Style the list items */
+nav ul li {
+    margin: 0 2em;
+    /* Increase the spacing between links */
+    position: relative;
+}
+
+/* Style the links */
+nav ul li a {
+    color: rgb(79, 62, 47);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    /* Increase the font size */
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+    z-index: 1;
+    position: relative;
+    /* Add this for proper positioning of pseudo-element */
+}
+
+/* Add an underlined pseudo-element */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    /* Initially hide the line */
+    transform-origin: center bottom;
+    /* Set the transform origin to the middle bottom */
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(105deg, #b74218, #9c2981);
+    /* Initial gradient color for the line */
+    transition: transform 0.3s, width 0.3s, background-image 0.3s;
+    /* Add transitions */
+    z-index: -1;
+}
+
+/* Animate the underlined effect on hover */
+nav ul li a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+    /* Expand from the middle */
+    width: 100%;
+    background-image: linear-gradient(105deg, #b74218, #9c2981);
+    /* Gradient effect on line hover, matches text color */
+}
+
+/* Add zoom effect on hover */
+nav ul li a:hover {
+    transform: scale(1.15);
+    /* Enlarge the text when hovered */
+    background-image: linear-gradient(105deg, #b74218, #9c2981);
+    /* Gradient effect on text hover */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Add the standard property */
+    color: transparent;
+}
+
+/* Style the submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: calc(110%);
+    /* Adjust the submenu positioning to be below the menu item */
+    left: -50%;
+    right: -50%;
+    /* Position submenu at the center of the menu item */
+    transform: translate(-50%, 0);
+    /* Horizontally align and center the submenu box */
+    background-image: linear-gradient(95deg, #eee7d0, #f9dfc5);
+    padding: 0.5em;
+    list-style: none;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    /* Center align submenu text */
+    text-align: center;
+    /* Add fade-in animation */
+    opacity: 0;
+    animation: fade-in 0.3s ease forwards;
+}
+
+/* Adjust submenu styles for Project */
+.fixed-navbar .project .submenu {
+    top: calc(110%);
+    /* Adjust the submenu positioning to be below the menu item */
+    left: -50%;
+    right: -50%;
+    transform: translateX(-50%);
+}
+
+/* Show submenu on hover */
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+/* Keyframes animation for fade-in */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.submenu li {
+    margin-bottom: 1em;
+}
+
+.submenu li a {
+    color: rgb(79, 62, 47);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+/* Add hover effect for submenu items */
+.fixed-navbar .submenu li a:hover {
+    background-image: linear-gradient(105deg, #b74218, #9c2981);
+    /* Change the color on hover */
+
+}
+
+
+/*================================================ footer ===================================================*/
+#footer {
+    height: 100px;
+    line-height: 25px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #a59382;
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: relative;
+    margin-top: -50px;
+    /* 使footer区块正好处于content的padding-bottom位置 */
+    clear: both;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+
+/*=============================================== back-to-top ================================================*/
+.backTop {
+    /* 回到顶部位置 */
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    margin-right: 20px;
+    z-index: 999;
+    /* 回到顶部样式 */
+    width: 50px;
+    height: 50px;
+    background-color: rgb(175, 191, 155);
+    /* 字体在元素中水平垂直居中 */
+    line-height: 40px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    /* 设置圆角 */
+    border-radius: 50%;
+    /* 设置过渡效果 */
+    transition: all linear 0.5s;
+    cursor: pointer;
+    /* 隐藏 透明度为0 */
+    opacity: 0;
+}

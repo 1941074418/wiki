@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>研究二设计|家长教育焦虑研究</title>
+    <link rel="shortcut icon" href="images/logo1.png" />
+
+    <link href="static/fishstyle.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*=================================================== subpage ================================================*/
+        #bodyContent {
+            font-family: Arial, "微软雅黑";
+            font-size: 12px;
+            color: #fff;
+            /* background: #fff; */
+        }
+
+        #bodyContent .main {
+            width: 70%;
+            position: relative;
+            left: 0%;
+            right: 6%;
+            float: left;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            text-align: justify;
+        }
+
+        #bodyContent .main .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        /* main0 */
+        #bodyContent .main0 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 640px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+
+        }
+
+        #bodyContent .main0 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main0 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main0 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main0 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main0 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main0 a:link {
+            color: rgb(101, 189, 120);
+        }
+
+        #bodyContent .main0 a:visited {
+            color: rgb(116, 180, 130);
+        }
+
+
+        /* main1 */
+        #bodyContent .main1 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 100px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+
+        }
+
+        #bodyContent .main1 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main1 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main1 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main1 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main1 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main1 a:link {
+            color: rgb(101, 189, 120);
+        }
+
+        #bodyContent .main1 a:visited {
+            color: rgb(116, 180, 130);
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!--======================================== navigation、progess bar ============================================-->
+    <script src="loadHeader.js"></script>
+
+
+    <!--======================================== header background  ================================================-->
+    <div id="background">
+        <img class="filter" src="images/bg1.jpg">
+        <div class="bg-text">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none">
+                研究二设计
+            </h1>
+        </div>
+    </div>
+
+
+    <!--================================================= sidebar ===================================================-->
+    <div class="pagenav">
+        <div onclick="goTo(document.getElementById('menu1'))"><span id="subtitle1">研究问题</span></div>
+        <div onclick="goTo(document.getElementById('menu2'))"><span id="subtitle2">研究假设</span></div>
+        <div onclick="goTo(document.getElementById('menu3'))"><span id="subtitle3">研究内容</span></div>
+        <div onclick="goTo(document.getElementById('menu4'))"><span id="subtitle4">研究对象</span></div>
+        <div onclick="goTo(document.getElementById('menu5'))"><span id="subtitle2">问卷组成</span></div>
+        <div onclick="goTo(document.getElementById('menu5-1'))"><span id="subtitle4">&emsp;基本信息</span></div>
+        <div onclick="goTo(document.getElementById('menu5-2'))"><span id="subtitle4">&emsp;简式父母教养方式量表</span></div>
+        <div onclick="goTo(document.getElementById('menu5-3'))"><span id="subtitle4">&emsp;亲子依恋量表</span></div>
+        <div onclick="goTo(document.getElementById('menu5-4'))"><span id="subtitle4">&emsp;学业坚毅量表</span></div>
+
+        <div onclick="goTo(document.getElementById('menu6'))"><span id="subtitle3">问卷数据统计与分析方法</span></div>
+        <div onclick="goTo(document.getElementById('menu7'))"><span id="subtitle4">研究意义</span></div>
+    </div>
+
+    <script>
+        var TopDistance = 130;
+        let elements = [document.getElementById('menu1'),
+        document.getElementById('menu2'),
+        document.getElementById('menu2-1'),
+        document.getElementById('menu2-2'),
+        document.getElementById('menu3')];
+        window.goTo = function (el) {
+            document.documentElement.scrollTop += el.getBoundingClientRect().top - TopDistance;
+        }
+    </script>
+
+
+    <!--=================================================== 正文 ====================================================-->
+    <div id="bodyContent">
+        <div class="main clearfix">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none;font-size:2.5rem;letter-spacing: 0.4rem;text-align: center;">
+                研究二:父母教养方式对学生学业坚毅的影响：亲子依恋的中介作用
+            </h1>
+            <br>
+            <div class="words">
+                &emsp;&emsp;通过前期的质性研究结果，我们发现这种教育焦虑外化为父母的教养方式与亲子依恋，因此在接下来的研究中，为了方便起见，我们通过父母教养方式与亲子依恋等外显的行为模式代替家长的教育焦虑这一内隐的心理状态进行研究；家长的教育焦虑会通过父母教养方式和亲子依恋对学生的性格情绪心理、个人行为模式、交互行为模式和综合能力产生影响。为了扩大研究范围，进一步验证结论，我们选取了学习心理中的学习坚毅这一方面，采用量化研究的方式，深入探究教育焦虑背景下，父母教养方式在亲子依恋的中介作用下，对学生学业坚毅的影响。
+            </div>
+        </div>
+
+        <br>
+
+        <div class="main0">
+            <div class="title subtitle" id="menu1">研究问题</div>
+            <div class="words">
+                &emsp;&emsp;本研究意图了解是否是因为教养方式的不同导致了学生学习心理和学习行为不同，亲子依恋在其中扮演了什么角色。过去的研究证明，父母教养方式通过亲子依恋这一中介变量影响孩子各方面发展，然而关于父母教养方式通过亲子依恋这一中介变量影响孩子学业方面的研究，虽然具备充足的理论建构，但相关实证研究较少。学业坚毅是近几年提出的关于人在学业上体现出的意志品质，对学业态度、学业情绪、学业行为等有着显著影响，然而关于其形成机制的研究较少。鉴于此，本研究的问题是父母教养方式是否会影响孩子的学业坚毅，其影响机制是否与亲子依恋有关。经过进一步拆解，该问题可以拆成以下子问题。
+            </div>
+            <div class="words">
+                &emsp;&emsp;第一，义务教育阶段学生的父母教养方式、亲子依恋与学业坚毅的现状如何？是否存在人口学变量差异？
+            </div>
+            <div class="words">
+                &emsp;&emsp;第二，父母教养方式、亲子依恋和学业坚毅两两之间是否存在相关关系？
+            </div>
+            <div class="words">
+                &emsp;&emsp;第三，父母教养方式中各维度是否可以预测学业坚毅？
+            </div>
+            <div class="words">
+                &emsp;&emsp;第四，亲子依恋是否在父母教养方式与学业坚毅的关系中起中介作用？
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu2">研究假设</div>
+            <div class="words">
+                &emsp;&emsp;基于以上研究问题，我们提出以下假设。
+            </div>
+            <div class="words">
+                &emsp;&emsp;H1:父母教养方式、亲子依恋和学业坚毅有显著的相关关系；
+            </div>
+            <div class="words">
+                &emsp;&emsp;H2:父母教养方式中各维度可均可预测学业坚毅；
+            </div>
+            <div class="words">
+                &emsp;&emsp;H3:亲子依恋在父母教养方式与学业坚毅的关系中起中介作用。
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu3">研究内容</div>
+            <div class="words">
+                &emsp;&emsp;第一，进行文献分析以了解目前的研究情况。查找父母教养方式、亲子依恋、学业坚毅方面的相关研究，进行文献整理，为研究提供基础。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;第二，进行问卷调查以收集数据。通过问卷星在线软件向义务教育阶段学生发放父母教养方式、亲子依恋、学业坚毅等量表组成的问卷。回收并进行数据清洗，筛选有效数据，验证量表准确性。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;第三，进行描述性统计分析以了解相关变量现状。将问卷有效数据导入分析软件SPSS，对父母教养方式、亲子依恋、学业坚毅进行描述性统计分析，并分析现状。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;第四，进行差异性分析研究各变量人口学差异。使用t检验或者F检验差异性检验分析父母教养方式、亲子依恋、学业坚毅这三个变量在性别、年级、主要监护人、学业成绩性别差异。并讨论这些差异的现实意义与可能的形成因素。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;第五，进行相关分析以探究变量间的相关性。采用皮尔逊相关法对父母教养方式、亲子依恋、学业坚毅进行相关性分析，发掘变量间可能存在的联系。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;第六，进行回归分析。探究父母教养方式是否能影响学业坚毅。以父母教养方式为自变量，学业坚毅为因变量，其他人口学因素为控制变量进行回归分析，探究父母教养方式与学业坚毅间是否存在因果关系。分析结果的理论意义和现实意义。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;第七，中介效应分析。探究父母教养方式影响学业坚毅的作用机制。讨论可能导致该结果的原因，并结合相关分析建立合适的中介效应模型并进行检验。对中介效应结果，绘制中介效应示意图，进行理论分析并提出实用性的建议或对策。
+            </div>
+
+            <div class="pic">
+                <table>
+                    <tr>
+                        <td><img src="images/re21.png" style="max-width: 800px; width: 100%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="picbartitle">
+                图1：研究二整体流程图
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu4">研究对象</div>
+            <div class="words">
+                &emsp;&emsp;本研究使用方便取样对广东省六到九年级在读学生进行问卷调查，由于六年级以下学生年龄太小，可能存在阅读困难且自我认知水平较低，故将研究对象限制为六到九年级的在读学生。本次问卷共回收486份，所有问卷填写完整，大部分问卷填写时间在600秒左右且量表内部方差不为0，可初步判断大多数学生填写问卷时较为认真。本研究认为填写时间小于200秒，量表内部方差小于0.3的问卷可能存在学生随意作答的现象，予以删除。删除后，共有有效问卷样本457份，其中男生195人，女生262人。被试分布表如下图。
+            </div>
+
+            <div class="pic">
+                <table>
+                    <tr>
+                        <td><img src="images/re22.png" style="max-width: 300px; width: 100%;"></td>
+                        <td><img src="images/re23.png" style="max-width: 300px; width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/re24.png" style="max-width: 300px; width: 100%;"></td>
+                        <td><img src="images/re25.png" style="max-width: 300px; width: 100%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="picbartitle">
+                图2：研究二对象分布图图
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu5">问卷组成</div>
+            <div class="words">
+                &emsp;&emsp;本研究采用的问卷主要有基本信息，简式父母教养方式量表，亲子依恋量表，学业坚毅量表。所有量表采用5点计分法，其中“1”表示“完全不符合”；“5”表示“完全符合”；次记为1—5分，学生得分越高，表示学生在某变量的情况更倾向于该维度。
+            </div>
+
+            <div class="title subsubtitle" id="menu5-1">1.基本信息</div>
+            <div class="words">
+                &emsp;&emsp;为了了解各变量人口学差异，问卷设置的基本信息板块，包括了性别、年级、主要监护人、学业成绩内容。其中试卷难度对学业成绩的影响，仅将学业成绩根据班级排名简单分为A，B，C，D四个等级。
+            </div>
+
+            <div class="title subsubtitle" id="menu5-2">2.简式父母教养方式量表</div>
+            <div class="words">
+                &emsp;&emsp;本研究所采用的中文版简式父母教养方式问卷是由蒋奖<a href="fishreference.html#ref51">[51]</a>等人（2010）根据国S-EMBU量表改编修订而来，共21个项目，分为拒绝（例：我在家里常常觉得我“一无是处”）、情感温暖（例：父/母亲总试图鼓励我,使我成为佼佼者。）、过度保护（例：我觉得父/母亲干涉我做的任何一件事。）三个维度。该量表的Cronbach’sα系数在0.74～0.84之间，具有较好的信度和效度。在本研究中，拒绝、情感温暖、过度保护三个维度的信度分别为0.891、0.905、0.731，量表整体为0.833，信度较高。
+            </div>
+
+            <div class="title subsubtitle" id="menu5-3">3.亲子依恋量表</div>
+            <div class="words">
+                &emsp;&emsp;本研究采用由Armsdenn和Greenberg(1987)编制和修订，由张迎黎<a href="fishreference.html#ref62">[62]</a>等人（2011）翻译修订的《父母同伴依恋量表》（IPPA-R）中文版，量表分为三个部分父亲依恋、母亲依恋、同伴依恋，每张量表包含信任、沟通、疏离三个维度。根据访谈结果中只有信任和依恋两个维度，对学生行为影响较大，因此本研究采用量表由父亲依恋、母亲依恋中的信任和疏离两个维度题目组成。信任维度有6个项目，如“父/母亲很理解我。”；疏离维度有10个项目，“父/母亲并不是很关心和在意我。”。该量表的Cronbach’sα系数在0.74～0.89之间，具有较好的信度和效度。在本研究中，父亲信任、父亲疏离、母亲信任、母亲疏离四个维度的信度分别为0.891、0.865、0.878、0.889，量表整体为0.748，信度较高。
+            </div>
+
+            <div class="title subsubtitle" id="menu5-4">4.学业坚毅量表</div>
+            <div class="words">
+                &emsp;&emsp;本研究采用林宛儒<a href="fishreference.html#ref71">[71]</a>（2021）编制的《中学生学业坚毅问卷》。该问卷包含16个题项，由目标明确（例：我始终坚信自己能实现学习目标）、持续努力（例：即使学习环境发生变化，我也会坚持完成学习任务）和积极信念（例：遇到学习障碍时，我坚信办法一定比闲难多）三个维度组成。该量表的Cronbach’sα系数为0.72～0.90之间，该问卷具有良好的信度。本研究中，目标明确、持续努力、积极信念三个维度Cronbach’sα系数为0.931、0.934、0.939，信度较高。
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu6">问卷数据统计与分析方法</div>
+            <div class="words">
+                &emsp;&emsp;本研究使用SPSS27.0对数据进行整理与分析，由于研究数据来源于被试的自我报告，采用Harman单因素方法进行共同方法偏差检验；
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;采用独立样本t检验对父母教养方式、亲子依恋、学业坚毅各维度在各个人口学变量上有无差异进行检验；
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;采用F检验来分析被试对各变量的影响是否存在显著差异，并在此基础上用LSD方法对被试进行了事后检验；
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;采用皮尔逊相关法对变量间相关关系进行分析；
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;对父母教养方式对学业坚毅的影响进行回归分析，并将亲子依恋各维度作为中介变量进行了中介效应分析。
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu7">研究意义</div>
+            <div class="words">
+                &emsp;&emsp;研究旨在通过问卷调查，分析父母教养方式与学业坚毅之间的关系，以及探究亲子依恋在父母教养方式与学业坚毅之间是否起到中介作用，为父母教养方式影响学业坚毅的机制提供实证研究的依据。帮助父母理解孩子的学业行为，以及为“望子成龙”的父母在思考如何教育孩子上提供一定的依据。
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+
+
+    <!--=============================================== bootsrtap ===================================================-->
+    <script src="/static/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--======================================= back to top、 footer ================================================-->
+    <script src="loadFooter.js"></script>
+</body>
+
+</html>

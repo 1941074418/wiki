@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>研究一设计|家长教育焦虑研究</title>
+    <link rel="shortcut icon" href="images/logo1.png" />
+
+    <link href="static/fishstyle.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*=================================================== subpage ================================================*/
+        #bodyContent {
+            font-family: Arial, "微软雅黑";
+            font-size: 12px;
+            color: #fff;
+            /* background: #fff; */
+        }
+
+        #bodyContent .main {
+            width: 70%;
+            position: relative;
+            left: 0%;
+            right: 6%;
+            float: left;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            text-align: justify;
+        }
+
+        #bodyContent .main .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+        
+        /* main0 */
+        #bodyContent .main0 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 690px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+
+        }
+
+        #bodyContent .main0 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main0 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main0 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main0 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main0 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main0 a:link {
+            color: rgb(101, 189, 120);
+        }
+
+        #bodyContent .main0 a:visited {
+            color: rgb(116, 180, 130);
+        }
+
+
+        /* main1 */
+        #bodyContent .main1 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 100px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+
+        }
+
+        #bodyContent .main1 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main1 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main1 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main1 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main1 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main1 a:link {
+            color: rgb(101, 189, 120);
+        }
+
+        #bodyContent .main1 a:visited {
+            color: rgb(116, 180, 130);
+        }
+
+        #table1 table{
+            width: 97%;
+            margin: 0px auto;
+            border-collapse: collapse;
+            font-size: 17px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(78, 78, 78);
+        }
+
+        #table1 th,
+        #table1 td {
+            border: 1px solid #999;
+            text-align: center;
+        }
+
+        #table1 table thead tr {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!--======================================== navigation、progess bar ============================================-->
+    <script src="loadHeader.js"></script>
+
+
+    <!--======================================== header background  ================================================-->
+    <div id="background">
+        <img class="filter" src="images/bg1.jpg">
+        <div class="bg-text">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none">
+                研究一设计
+            </h1>
+        </div>
+    </div>
+
+
+    <!--================================================= sidebar ===================================================-->
+    <div class="pagenav">
+        <div onclick="goTo(document.getElementById('menu1'))"><span id="subtitle1">研究问题</span></div>
+        <div onclick="goTo(document.getElementById('menu2'))"><span id="subtitle2">研究目标</span></div>
+        <div onclick="goTo(document.getElementById('menu3'))"><span id="subtitle3">研究内容</span></div>
+        <div onclick="goTo(document.getElementById('menu4'))"><span id="subtitle4">研究方法</span></div>
+        <div onclick="goTo(document.getElementById('menu4-1'))"><span id="subtitle4">&emsp;研究对象抽象的方法</span></div>
+        <div onclick="goTo(document.getElementById('menu4-2'))"><span id="subtitle4">&emsp;数据收集与分析的方法</span></div>
+        <div onclick="goTo(document.getElementById('menu4-2-1'))"><span id="subtitle4">&emsp;&emsp;问卷调查方法</span></div>
+        <div onclick="goTo(document.getElementById('menu4-2-2'))"><span id="subtitle4">&emsp;&emsp;访谈分析方法</span></div>
+        <div onclick="goTo(document.getElementById('menu4-2-3'))"><span id="subtitle4">&emsp;&emsp;主题分析方法</span></div>
+    </div>
+
+    <script>
+        var TopDistance = 130;
+        let elements = [document.getElementById('menu1'),
+        document.getElementById('menu2'),
+        document.getElementById('menu2-1'),
+        document.getElementById('menu2-2'),
+        document.getElementById('menu3')];
+        window.goTo = function (el) {
+            document.documentElement.scrollTop += el.getBoundingClientRect().top - TopDistance;
+        }
+    </script>
+
+
+    <!--=================================================== 正文 ====================================================-->
+    <div id="bodyContent">
+        <div class="main clearfix">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none;font-size:2.5rem;letter-spacing: 0.4rem;text-align: center;">
+                研究一:“双减”下家长教育焦虑对义务教育学生的影响质性研究
+            </h1>
+            <br>
+            <div class="words">
+                &emsp;&emsp;本部分针对家长的教育焦虑对孩子的影响这一主要问题提出了三个子问题，并在研究问题的基础上制定了研究目标，展开了研究内容，选定了研究方法，在家庭系统理论的指导下对具体的研究步骤进行了进一步的设计调整。研究分为调查问卷以及访谈两个部分。调查问卷主要目的是解家长教育焦虑的大致情况以及为访谈分析划分家长教育焦虑水平，研究对象为广东省义务教育阶段的88名家长；访谈主要目的是分析家长不同程度的教育焦虑对学生各个方向的影响，它包含预访谈和正式访谈两个阶段，研究对象包含预访谈在内共26名学生和16名家长，共42名受访者。调查问卷分析以描述性分析为主，访谈分析以主题分析为主。
+            </div>
+        </div>
+
+        <br>
+
+        <div class="main0">
+            <div class="title subtitle" id="menu1">研究问题</div>
+            <div class="words">
+                &emsp;&emsp;结合文献综述，本研究主要的研究问题为家长教育焦虑对学生的不同方面的影响。对这个问题进一步拆解，就会得到如下三个子问题：
+            </div>
+            <div class="words">
+                &emsp;&emsp;第一，目前家长的教育焦虑整体上达到了什么样的程度，是否能够选取合适的指标对家长的教育焦虑水平进行分类。
+            </div>
+            <div class="words">
+                &emsp;&emsp;第二，家长不同程度的教育焦虑主要表现是什么，对学生哪些方面产生了影响，这些影响表现是什么，影响之间是否有联系。
+            </div>
+            <div class="words">
+                &emsp;&emsp;第三，能否通过这些影响得到合适的建议来调节家长的教育焦虑。
+            </div>
+            <div class="words">
+                &emsp;&emsp;以上三个子问题合并起来就能够回答家长不同程度的教育焦虑对学生不同方面的影响。因此我们以这三个子问题为核心进一步得到研究目标。
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu2">研究目标</div>
+            <div class="words">
+                &emsp;&emsp;本研究以中小学生以及他们的家长为研究对象，结合已有研究成果，首先对学生家长采用问卷调查的方式了解家长教育焦虑的整体情况，为访谈划分家长教育焦虑水平做准备，解决子问题一；再选取典型学生和家长进行访谈，进一步了解当前家长教养焦虑程度，结合“双减”背景，从不同角度采用主题分析的方法分析建构家长不同程度教育焦虑对义务教育阶段学生的影响以及影响直链的联系，得到相关结论，解决子问题二；最后结合所得出的结论，为家长了解教育焦虑对学生的影响以及选择正确的教养方式提出了相关建议，为学生缓解家长教育焦虑对自身的影响提出了相关建议，解决子问题三。具体目标有：
+            </div>
+            <div class="words">
+                &emsp;&emsp;第一，采用问卷调查，了解家长教育焦虑的整体情况，为访谈划分家长教育焦虑水平做准备。
+            </div>
+            <div class="words">
+                &emsp;&emsp;第二，进行访谈，刻画家长的教育焦虑表现，整合梳理家长不同程度教育焦虑对学生的影响以及影响之间的联系，并分角度提出针对性建议。
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu3">研究内容</div>
+            <div class="words">
+                &emsp;&emsp;第一，文献梳理，了解当前教育焦虑的研究，为之后的研究提供理论基础。第二，通过问卷了解家长教育焦虑的整体情况。发放、回收问卷准确筛选有效数据，对家长教育焦虑水平进行描述性分析。根据数据分析结果，为访谈划分家长教育焦虑水平做准备。第三，通过访谈分析建构家长不同程度教育焦虑对学生的影响。在进行访谈之后，对受访学生与家长划分其教育焦虑水平，并转录编码，采用主题分析的方式分析建构家长不同程度教育焦虑对学生的影响。第四，针对研究结果得出结论与建议。根据所得访谈结果进行进一步归纳，得到家长教育焦虑影响模式图的结论。最后依据研究结论从不同主体提出实用性的建议或对策。
+            </div>
+
+            <div class="pic">
+                <table>
+                    <tr>
+                        <td><img src="images/re11.png" style="max-width: 800px; width: 100%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="picbartitle">
+                图1：研究一整体流程图
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu4">研究方法</div>
+            <div class="title subsubtitle" id="menu4-1">1.研究对象抽样的方法</div>
+            <div class="words">
+                &emsp;&emsp;调查问卷研究对象：由于地域限制等原因，采用线上问卷形式进行发放，研究对象主要为广东省义务教育阶段学生的家长。通过问卷星进行线上问卷发放，共回收有效问卷88份。描述性统计如表1：
+            </div>
+
+            <div class="picbartitle">
+                表1：调查问卷背景信息描述性统计表
+            </div>
+
+            <div id="table1">
+                <table border="1.5" class="dataframe">
+                    <thead>
+                        <tr style="background-color:#eeeeee">
+                            <th >变量</th>
+                            <th>类别</th>
+                            <th>人数</th>
+                            <th>占比</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr  style="background-color:#e1e9e0" >
+                            <th rowspan="2">与孩子的关系</th>
+                            <td>父亲</td>
+                            <td>1</td>
+                            <td>6.25%</td>
+                        </tr>
+                        <tr  style="background-color:#e1e9e0" >
+                            
+                            <td>母亲</td>
+                            <td>15</td>
+                            <td>6.25%</td>
+                        </tr>
+
+                        <tr style="background-color:#f8eee8">
+                            <th rowspan="2">所处学段</th>
+                            <td>小学</td>
+                            <td>5</td>
+                            <td>19.23%</td>
+                        </tr>
+                        <tr style="background-color:#f8eee8" >
+                            <td>初中</td>
+                            <td>21</td>
+                            <td>80.76%</td>
+                        </tr>
+
+                        <tr style="background-color:#f7f5e7">
+                            <th rowspan="2">孩子性别</th>
+                            <td>男</td>
+                            <td>12</td>
+                            <td>46.15%</td>
+                        </tr>
+                        <tr style="background-color:#f7f5e7">
+                            <td>女</td>
+                            <td>14</td>
+                            <td>53.84%</td>
+                        </tr>
+
+                        <tr style="background-color:#e1dee6cc">
+                            <th rowspan="3">家长焦虑程度</th>
+                            <td>低</td>
+                            <td>5</td>
+                            <td>31.25%</td>
+                        </tr>
+                        <tr style="background-color:#e1dee6cc">
+                            <td>中</td>
+                            <td>4</td>
+                            <td>25.00%</td>
+                        </tr>
+                        <tr style="background-color:#e1dee6cc">
+                            <td>高</td>
+                            <td>7</td>
+                            <td>43.75%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="words">
+                &emsp;&emsp;访谈研究对象：访谈对象包含预访谈在内共26名学生和16名家长，共42名受访对象，受访者来自的地区包括广东、湖南、山东等地。访谈分为预访谈和正式访谈两个阶段，预访谈对象为2名初三学生及其对应的2位家长，共4位访谈对象；正式访谈对象为24名中小学生（男生12人，女生14人）和14名家长（父亲1名，母亲13名）。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;访谈转录后，根据调查问卷结果，依照家长内在的焦虑程度、家长对外界刺激的反应程度、家长是否对孩子有压迫行为、家长的焦虑程度对孩子的影响等维度可以将学生的家长教育焦虑划分为重度焦虑（9名）、中度焦虑（6名）和轻度焦虑（11名）。受访者编码如表2。
+            </div>
+           
+            <div class="picbartitle">
+                表2：受访者编码表
+            </div>
+            <div id="table1">
+                <table border="1.5" class="dataframe">
+                    <thead>
+                        <tr style="background-color:#eeeeee">
+                            <th >焦虑程度</th>
+                            <th>对象</th>
+                            <th>编码</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr  style="background-color:#e1e9e0" >
+                            <th rowspan="2">重度焦虑</th>
+                            <td>学生</td>
+                            <td>FS1-L1-L、FS1-L2-L、FS2-E2-L、FS2-E5-L、FS2-E7-L、PS1-Y1-L、FS2-W1-L、FS2-W2-L、FS2-Y2-L</td>
+                        </tr>
+                        <tr  style="background-color:#e1e9e0" >
+                            <td>家长</td>
+                            <td>FP1-L1-L、PP1-Y1-L、FP1-W1-L、FP1-W2-L、FP1-E5-L、FP1-E2-L、PF2-Y3-L</td>
+                        </tr>
+
+                        <tr style="background-color:#f8eee8">
+                            <th rowspan="2">中度焦虑</th>
+                            <td>学生</td>
+                            <td>FS2-E6-M、FS1-W4-M、FS1-T4-M、FS2-T5-M、FS1-Y3-M、FS1-Y1-M</td>
+                        </tr>
+                        <tr style="background-color:#f8eee8" >
+                            <td>家长</td>
+                            <td>FP1-T5、FP1-E7-M、FP1-W4-M、FP1-T1-M</td>
+                        </tr>
+
+                        <tr style="background-color:#f7f5e7">
+                            <th rowspan="2">轻度焦虑</th>
+                            <td>学生</td>
+                            <td>FS2-E1-S、FS1-E3-S、FS1-E4-S、FS1-W3-S、PS1-T1-S、FS1-T1-S、FS2-T2-S、FS2-T3-S、FS1-L3-S、FS2-L4-S、FS1-L5-S</td>
+                        </tr>
+                        <tr style="background-color:#f7f5e7">
+                            <td>家长</td>
+                            <td>PP1-T1-S、FP1-T3-S、FP1-L3-S、FP1-L4-S、FP1-L5-S</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;编码具体释义如表3。
+            </div>
+
+            <div class="picbartitle">
+                表3：受访者编码释义表
+            </div>
+
+            <div id="table1">
+                <table border="1.5" class="dataframe">
+                    <thead>
+                        <tr style="background-color:#eeeeee">
+                            <th >编码示例</th>
+                            <th>编码缩写</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>正式访谈/预访谈</td>
+                            <td>F/P（Formal/Pre-interview）</td>
+                        </tr>
+                        <tr>
+                            <td>学生/家长</td>
+                            <td>S/P（Student/Parents）</td>
+                        </tr>
+                        <tr>
+                            <td>女/男</td>
+                            <td>1/2</td>
+                        </tr>
+                        <tr>
+                            <td>访谈者1-5</td>
+                            <td>L/T/E/W/Y</td>
+                        </tr>
+                        <tr>
+                            <td>（家长焦虑程度）轻/中/重度焦虑</td>
+                            <td>S/M/L</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            <div class="title subsubtitle" id="menu4-2">2.数据收集与分析的方法</div>
+            <div class="words">
+                &emsp;&emsp;数据收集过程中，主要采用的方法是问卷调查法与访谈法；数据分析过程中，调查问卷主要采用了描述性分析，而访谈主要采用了主题分析。
+            </div>
+            <div class="title subsubtitle" id="menu4-2-1">（1）问卷调查法</div>
+            <div class="words">
+                &emsp;&emsp;为了解家长教育焦虑的大致情况以及为访谈分析划分家长教育焦虑水平，本研究首先采用问卷调查的方式进行数据收集与分析。
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2-1-1">&emsp;&emsp;①问卷设计</div>
+            <div class="words">
+                &emsp;&emsp;问卷包含基本信息与家长教育焦虑两部分。问卷的构成主要包括两大部分：基本信息与家长教育焦虑。在基本信息部分，我们收集参与者的基本资料，如年龄、性别、职业、受教育程度。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;家长教育焦虑部分是问卷的核心内容。为了准确衡量家长在教育方面的焦虑程度，我们参考了刘艳妹的《小学生家长的教育焦虑问题研究》的附录1：小学生家长教育焦虑问卷第二部分，以及阳嘉琪的《隐秘的补习：乡村家长教育焦虑研究》的附录1：乡村家长教育焦虑调查问卷第二部分，问卷涉及父母对孩子学业、兴趣爱好、心理健康等方面的焦虑程度。同时，我们也关注家长的教育观念、教育期望以及他们对教育资源的态度和看法。
+            </div>
+
+            <div class="words">
+                &emsp;&emsp;本次调查问卷共设计20道小题，其中背景信息题4道，矩阵量表题16道，每道小题满分为5分。采用李克特 5 点正向计分法对题目的回答进行赋值。在《家长教育焦虑问卷》中， 1=完全不符合，2=比较不符合，3=基本符合，4=比较符合，5=完全符合，得分越高，父母教养焦虑程度越高。所有题目总分的平均分作为父母的焦虑总得分，得分高的说明父母的焦虑问题比较严重。具体的问卷内容见附录一。
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2-1-2">&emsp;&emsp;②问卷发放</div>
+            <div class="words">
+                &emsp;&emsp;对调查对象进行正式的调研，运用问卷星的形式发放问卷，问卷回收后进行数据筛选。
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2-1-3">&emsp;&emsp;③问卷分析</div>
+            <div class="words">
+                &emsp;&emsp;主要采用excel进行数据清洗与描述性分析。
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2-2">（2）访谈分析法</div>
+            <div class="title subsubtitle" id="menu4-2-2-1">&emsp;&emsp;①访谈设计</div>
+            <div class="words">
+                &emsp;&emsp;采取半结构式访谈，面对不同的访谈对象结合访谈主题设计不同的基础访谈问题，同时在访谈过程中尽量保持聊天的松弛状态，提高访谈内容的有效性和真实性，了解家长教育焦虑和孩子在家长教育焦虑下所受影响的真实想法，并挖掘其产生原因。比如从升学情况了解家庭的教育矛盾、教育焦虑；从补习班情况询问孩子在家长焦虑下学习能力和学习态度所受到的影响。具体的访谈内容见附录二和附录三。
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2-2-2">&emsp;&emsp;②访谈实施</div>
+            <div class="words">
+                &emsp;&emsp;访谈实施过程包括预访谈和正式访谈。首先根据调查问卷结果设计访谈稿初版，选取了两个家庭进行结构式访谈作为预访谈。预访谈结束后，由于情况并不理想，所以根据预访谈实际情况对访谈稿作出了调整，改为半结构式访谈。正式访谈分为2个阶段，第一阶段以学生访谈为主，访谈分析阶段发现缺乏家长访谈作为支撑，于是在第二阶段以家长访谈为主。
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2-2-3">&emsp;&emsp;③访谈分析</div>
+            <div class="words">
+                &emsp;&emsp;访谈分析主要采用主题分析法提取关键信息与核心主题。
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2-3">（3）主题分析法</div>
+            <div class="words">
+                &emsp;&emsp;访谈分析所选用软件为NVivo，主要分析方法为主题分析。主题分析有助于提取关键信息，揭示文本的核心观点和目标，并为进一步研究和理解提供支持<a href="fishreference.html#ref79">[79]</a>，贴合研究目的。将访谈转录文档导入NVivo后，首先通过集体讨论确定主题方向，然后对学生和家长的访谈转录稿进行编码（439个学生编码点，194个家长编码点），最后针对学生的访谈编码梳理分主题并总结归纳总主题（共13个，分主题与总主题分布见图4），撰写访谈分析，将家长的编码作为访谈分析的辅助支撑材料。旨在通过探究文本内容、语义及相关信息等，重新构架并深入理解和挖掘文本主题。
+            </div>
+            <div class="pic">
+                <table>
+                    <tr>
+                        <td><img src="images/re12.png" style="max-width: 800px; width: 100%;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="picbartitle">
+                图1：学生访谈主题分析图
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+
+
+    <!--=============================================== bootsrtap ===================================================-->
+    <script src="/static/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--======================================= back to top、 footer ================================================-->
+    <script src="loadFooter.js"></script>
+</body>
+
+</html>

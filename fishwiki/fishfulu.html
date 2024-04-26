@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>研究一:家长教育焦虑水平分析|家长教育焦虑研究</title>
+    <link rel="shortcut icon" href="images/logo1.png" />
+
+    <link href="static/fishstyle.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*=================================================== subpage ================================================*/
+        #bodyContent {
+            font-family: Arial, "微软雅黑";
+            font-size: 12px;
+            color: #fff;
+            /* background: #fff; */
+        }
+
+        #bodyContent .main {
+            width: 70%;
+            position: relative;
+            left: 0%;
+            right: 6%;
+            float: left;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            text-align: justify;
+            margin: 0.9em 0em;
+        }
+
+        #bodyContent .main .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main a:link {
+            color: rgb(101, 189, 120);
+        }
+
+        #bodyContent .main a:visited {
+            color: rgb(116, 180, 130);
+        }
+
+        /* main0 */
+        #bodyContent .main0 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 2970px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+        }
+
+        #bodyContent .main0 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main0 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main0 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main0 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main0 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main0 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main0 a:link {
+            color: rgb(101, 189, 120);
+        }
+
+        #bodyContent .main0 a:visited {
+            color: rgb(116, 180, 130);
+        }
+
+        /* main1 */
+        #bodyContent .main1 {
+            width: 70%;
+            position: relative;
+            left: 22.9%;
+            right: 6%;
+            margin-top: 100px;
+            margin-bottom: 60px;
+            padding: 50px 40px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #fff;
+            letter-spacing: 0.15em;
+            line-height: 40px;
+
+        }
+
+        #bodyContent .main1 .subtitle {
+            /* margin-left: ; */
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #bodyContent .main1 .subsubtitle {
+            padding-left: 5px;
+            font-size: 21px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, sans-serif;
+            color: rgb(50, 50, 50);
+            line-height: 50px;
+        }
+
+        #bodyContent .main1 .words {
+            padding-left: 5px;
+            font-size: 21px;
+            font-family: Arial, "微软雅黑";
+            color: rgb(50, 50, 50);
+            margin: 0.9em 0em;
+            text-align: justify;
+        }
+
+        #bodyContent .main1 .pic img {
+            /* height: 200px; */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic table {
+            margin: 0 auto;
+        }
+
+        #bodyContent .main1 .pic img:hover {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.096);
+        }
+
+        #bodyContent .main1 .picbartitle {
+            padding-left: 5px;
+            font-size: 14px;
+            font-family: Arial, "微软雅黑";
+            font-weight: bold;
+            color: rgb(78, 78, 78);
+            text-align: center;
+        }
+
+        #bodyContent .main1 a:link {
+            color: rgb(101, 189, 120);
+        }
+
+        #bodyContent .main1 a:visited {
+            color: rgb(116, 180, 130);
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!--======================================== navigation、progess bar ============================================-->
+    <script src="loadHeader.js"></script>
+
+
+    <!--======================================== header background  ================================================-->
+    <div id="background">
+        <img class="filter" src="images/bg1.jpg">
+        <div class="bg-text">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none">
+                成果展示
+            </h1>
+        </div>
+    </div>
+
+
+    <!--================================================= sidebar ===================================================-->
+    <div class="pagenav">
+        <div onclick="goTo(document.getElementById('menu1'))"><span id="subtitle1">附录一：家长教育焦虑水平问卷</span></div>
+        <div onclick="goTo(document.getElementById('menu2'))"><span id="subtitle2">附录二：访谈稿（学生）</span></div>
+        <div onclick="goTo(document.getElementById('menu3'))"><span id="subtitle2">附录三：访谈稿（家长）</span></div>
+        <div onclick="goTo(document.getElementById('menu4'))"><span id="subtitle2">附录四：亲子依恋的中介作用调查问卷</span></div>
+    </div>
+
+    <script>
+        var TopDistance = 130;
+        let elements = [document.getElementById('menu1'),
+        document.getElementById('menu1-1'),
+        document.getElementById('menu1-2'),
+        document.getElementById('menu2'),
+        document.getElementById('menu2-1'),
+        document.getElementById('menu2-2'),
+        document.getElementById('menu2-3')];
+        window.goTo = function (el) {
+            document.documentElement.scrollTop += el.getBoundingClientRect().top - TopDistance;
+        }
+    </script>
+
+
+    <!--=================================================== 正文 ====================================================-->
+    <div id="bodyContent">
+        <div class="main clearfix">
+            <div class="title subtitle" id="menu1">附录一：家长教育焦虑水平问卷</div>
+            <div class="title subsubtitle" id="menu1-1">背景信息题</div>
+            <div class="words">
+                1.您是孩子的__?<br>
+                &emsp;&emsp;○父亲&emsp;&emsp;○母亲&emsp;&emsp;○其他监护人 ___<br><br>
+                2.您的年龄？<br>
+                &emsp;&emsp;○29岁及以下&emsp;&emsp;○30-35岁&emsp;&emsp;○36-40岁&emsp;&emsp;○41-45岁&emsp;&emsp;○46-50岁&emsp;&emsp;<br>
+                &emsp;&emsp;○51-55岁&emsp;&emsp;○56-60岁&emsp;&emsp;○61岁及以上<br><br>
+                3.您的文化程度？<br>
+                &emsp;&emsp;○小学&emsp;&emsp;○初中&emsp;&emsp;○高中/中专/职高&emsp;&emsp;○大专&emsp;&emsp;○大学本科&emsp;&emsp;<br>
+                &emsp;&emsp;○硕士&emsp;&emsp;○博士<br><br>
+                4.您孩子的学段？<br>
+                &emsp;&emsp;○小学一到三年级&emsp;&emsp;○小学四到五年级&emsp;&emsp;○小学六年级&emsp;&emsp;○初中一、二年级<br>
+                &emsp;&emsp;○初中三年级&emsp;&emsp;○高中一、二年级&emsp;&emsp;○高中三年级<br><br>
+            </div>
+            
+            <div class="title subsubtitle" id="menu1-2">矩阵量表题</div>
+            <div class="words">
+                5.我会经常将孩子与别人家的孩子进行比较，非常害怕ta落后于人。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                6.我给孩子报很多补习班，这样ta成绩才能提高。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                7.我为孩子报名很多兴趣班，会的多准没错。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                8.我经常向孩子了解孩子朋友的成绩，不太喜欢ta与成绩不好的孩子交朋友。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                9.我很少关注孩子的成绩，对孩子的学习状态也不会过多干预。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                10.我会经常催促、监督孩子学习，为ta制定学习计划。 <br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                11.我经常向孩子的老师了解孩子在学校中的表现。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                12.我会担心孩子学校的教师质量不高。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                13.我非常担心孩子不能升入理想学校。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                14.在升学问题上，对孩子的选择我不做干预。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                15.我非常担心孩子没有别人努力，未来会过的很差。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                16.我经常因为孩子反感、排斥我的管教而觉得头疼。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                17.我觉得孩子的学习态度不主动不自觉，对此我很焦虑。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                18.我觉得孩子在学校跟着老师学习就好，假期玩耍的开心最重要。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                19.我会因为孩子的教育问题，整夜失眠。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                20.孩子的教育问题几乎填满了我的生活。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="main0 ">
+            <div class="title subtitle" id="menu2">附录二：访谈稿（学生）</div>
+            <div class="words">
+                1.描述一下日常学习生活的一周。
+            </div>
+            <div class="words">
+                2.双减出来以后，你有没有觉得更轻松了？
+            </div>
+            <div class="words">
+                3.补习班，兴趣班都上过什么，上了多久？
+            </div>
+            <div class="words">
+                4.如何升学（询问孩子能够感受到的升学焦虑、师资焦虑等）。
+            </div>
+            <div class="words">
+                5.谁管学习管得比较多（自我感觉父母的教育方式对自己有什么影响）。
+            </div>
+            <div class="words">
+                6.成绩怎么样？怎样看待学习这件事？一提到学习考试会不会紧张，为什么？（对学业成绩、个人性格造成了怎么样的影响）
+            </div>
+            <div class="words">
+                7.父母有没有谈过“别人家的孩子”，平时走亲戚去朋友家会不会特别关心别人家的孩子是怎么样的？对别人家的孩子是个什么看法？
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu3">附录三：访谈稿（家长）</div>
+            <div class="words">
+                1.描述一下孩子平时学习生活的一周，为了孩子的学习您都做了什么事情？未来有没有陪读的想法？
+            </div>
+            <div class="words">
+                2.双减出来以后，你有没有觉得更轻松了？
+            </div>
+            <div class="words">
+                3.补习班，兴趣班孩子都上过什么，上了多久，为了什么，你觉得孩子上这些班学到了什么（从这里可以问孩子的人脉关系、综合能力）？
+            </div>
+            <div class="words">
+                4.如何升学（旁敲侧击询问家长在孩子升学过程中的升学焦虑、师资焦虑等）？这么辛苦，孩子性格有什么变化吗？
+            </div>
+            <div class="words">
+                5.谁管学习管得比较多，为什么另一半不管，孩子对于家长管学习的态度。
+            </div>
+            <div class="words">
+                6.孩子成绩怎么样？怎样看待学习这件事？孩子一提到学习考试会不会紧张，为什么（他的做法对于孩子的学业成绩，个人性格造成了怎么样的影响）？
+            </div>
+            <div class="words">
+                7.身边有没有比较佩服的家长？（他们的孩子是什么样的？）平时家长之间会不会在微信聊天，一般都聊什么？在今日头条（类似软件）里一般都搜索什么样的资讯？
+            </div>
+            <div class="words">
+                8.对于孩子的未来更担心哪方面？
+            </div>
+        </div>
+
+        <div class="main1">
+            <div class="title subtitle" id="menu4">附录四：父母教养方式对学生学业坚毅的影响：亲子依恋的中介作用调查问卷</div>
+            <div class="title subsubtitle" id="menu4-1">背景信息题</div>
+            <div class="words">
+                1.您的性别是?<br>
+                &emsp;&emsp;○男&emsp;&emsp;○女<br><br>
+                2.您的年级是? <br>
+                &emsp;&emsp;○六年级&emsp;&emsp;○七年级&emsp;&emsp;○八年级&emsp;&emsp;○九年级&emsp;&emsp;○其他<br><br>
+                3.您目前成绩在班里排名处于:？<br>
+                &emsp;&emsp;○前25%&emsp;&emsp;○前50%&emsp;&emsp;○前75%&emsp;&emsp;○其他<br><br>
+                4.在您的教育方面（学习指导与管理），家里谁管的最多?？<br>
+                &emsp;&emsp;○父亲&emsp;&emsp;○母亲&emsp;&emsp;○父母一样多&emsp;&emsp;○其他监护人<br><br>
+            </div>
+            
+            <div class="title subsubtitle" id="menu4-2">父母教养方式矩阵量表题</div>
+            <div class="words">
+                5.父/母亲常以一种使我很难堪的方式对待我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                6.父/母亲经常当着别人的面批评我既懒惰又无用。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                7.即使是很小的过错,父/母亲也惩罚我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                8.父/母亲对我的惩罚往往超过我应受的程度。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                9.父/母亲常常在我不知道原因的情况下对我大发脾气。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                10.我在家里常常觉得我“一无是处”。 <br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                11.我觉得父/母亲尽量使我的青少年时期的生活更有意义和丰富多彩。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                12.当遇到不顺心的事时,我能感到父/母亲在尽量鼓励我,使我得到安慰。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                13.父/母亲总试图鼓励我,使我成为佼佼者。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                14.父/母亲赞美我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                15.我觉得与父/母亲之间存在一种温暖、体贴和亲热的感觉。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                16.当我做的事情取得成功时,我觉得父/母亲很为我自豪。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                17.我能通过父/母亲的言谈、表情感受到她很喜欢我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                18.父/母亲不允许我做一些其他孩子可以做的事情,因为她害怕我会出事。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                19.父/母亲要求我回到家里必须得向她说明我在外面做了什么事。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                20.父/母亲总是左右我该穿什么衣服或该打扮成什么样子。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br>
+                21.我觉得父/母亲对我可能出事的担心是夸大的、过分的。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br>
+                22.父/母亲对我该做什么、不该做什么都有严格的限制而且绝不让步。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br>
+                23.我觉得父/母亲干涉我做的任何一件事。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br>
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2">父子依恋矩阵量表题</div>
+            <div class="words">
+                24.父亲很在意我的感受。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                25.我觉得父亲是一个称职的好父亲。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                26.很希望自己的父亲是另一个人。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                27.我父亲乐于接受我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                28.我觉得让父亲知道我的感受没有任何用处。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                29.与父亲谈论我所遇到的问题会让我觉得尴尬或难为情。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                30.父亲对我的要求过高。 <br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                31.与父亲在一起时我很容易感到不安。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                32.对于我经常感到不安的情形，父亲知之甚少。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                33.父亲信任我的判断力。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                34.父亲有他自己需要面对的问题，因此我不给他增添麻烦。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                35.我对父亲感到很愤怒。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                36.父亲并不是很关心和在意我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                37.父亲很理解我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                38.我信任父亲。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                39.父亲对我学习和生活的情形并不了解。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+            </div>
+
+            <div class="title subsubtitle" id="menu4-3">母子依恋矩阵量表题</div>
+            <div class="words">
+                40.母亲很在意我的感受。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                41.我觉得母亲是一个称职的好父亲。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                42.很希望自己的母亲是另一个人。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                43.我母亲乐于接受我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                44.我觉得让母亲知道我的感受没有任何用处。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                45.与母亲谈论我所遇到的问题会让我觉得尴尬或难为情。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                46.母亲对我的要求过高。 <br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                47.与母亲在一起时我很容易感到不安。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                48.对于我经常感到不安的情形，母亲知之甚少。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                49.母亲信任我的判断力。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                50.母亲有他自己需要面对的问题，因此我不给他增添麻烦。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                51.我对母亲感到很愤怒。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                52.母亲并不是很关心和在意我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                53.母亲很理解我。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                54.我信任母亲。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                55.母亲对我学习和生活的情形并不了解。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+            </div>
+
+            <div class="title subsubtitle" id="menu4-2">父母教养方式矩阵量表题</div>
+            <div class="words">
+                6.为了实现学习目标，我会投入足够多的时间学习。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                7.实现学习目标是一件快乐的事情。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                8.我始终坚信自己能实现学习目标。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                9.在学习过程中，我有明确的努力方向。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                10. 一旦设定了某个学习目标，我就会为之奋斗到底。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                11.我的学习目标对我的未来发展有重要的意义。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                12.我不会因为其他事情的影响而轻易改变自己的学习目标。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                13.我坚信只要我坚持学习，一定能够提升薄弱学科的成绩。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                14.面对外界环境的干扰，我始终专注于自己的学习任务。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                15.即使学习环境发生变化，我也会坚持完成学习任务。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>              
+                16.为了实现学习目标，我会控制自己的娱乐时间。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                17.遇到学习障碍时，我坚信办法一定比困难多。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                18.我不会轻易改变自己的长期学习目标。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                19.我相信只要坚持努力，一切学习困难都会解决的。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                20.为了实现学习目标，我敢克服各种学习困难难。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br><br>
+                21.虽然实现学习目标的过程很漫长，但我相信有志者事竟成。<br>
+                &emsp;&emsp;○完全不符合&emsp;&emsp;○比较不符合&emsp;&emsp;○基本符合&emsp;&emsp;○比较符合&emsp;&emsp;○完全符合<br>
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+
+
+    <!--=============================================== bootsrtap ===================================================-->
+    <script src="/static/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--======================================= back to top、 footer ================================================-->
+    <script src="loadFooter.js"></script>
+</body>
+
+</html>

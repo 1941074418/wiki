@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>关于我们|家长教育焦虑研究</title>
+    <link rel="shortcut icon" href="images/logo1.png" />
+
+    <link href="static/fishstyle.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css">
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*=========================================== team 翻转卡片 ==================================================*/
+        .team_name {
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            font-size: 2.5em;
+            margin: auto auto;
+            display: flex;
+            /* 使用 Flex 布局 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            text-align: center;
+        }
+
+        .team_name_content {
+            margin: 10px 570px;
+            border-radius: 20px;
+            /* border: #df7862 4px solid; */
+            text-align: center;
+            letter-spacing: 10px;
+            background-size: cover;
+            z-index: -3;
+            position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            display: flex;
+            /* 使用 Flex 布局 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+
+        }
+
+        .team_name h1 {
+            font-family: Arial, "微软雅黑";
+            font-size: 40px;
+            font-weight: bolder;
+            margin: 10px 20px;
+            color: transparent;
+            background: #565454;
+            -webkit-textrgb: (101, 101, 101);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            position: relative;
+            letter-spacing: 0.4rem;
+            line-height: 50px;
+        }
+
+        /* 老师介绍 */
+        .card_team_teacher {
+            height: 400px;
+            perspective: 1000px;
+            background-color: white;
+        }
+
+        .card__inner_teacher {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .card__face--front_teacher {
+            background-image: linear-gradient(35deg, rgb(166, 203, 186), #Ffffff, #Ffffff, rgb(131, 175, 155));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card__face--front_teacher h2 {
+            color: #000000;
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .card__face--front_teacher h3 {
+            color: #3d3d3d;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        /* 学生介绍 */
+        .card_team {
+            height: 400px;
+            perspective: 1000px;
+            background-color: white;
+            width: 100%;
+        }
+
+        .card__inner {
+            width: 100%;
+            height: 100%;
+            -o-transition: transform 1s;
+            -moz-transition: transform 1s;
+            -webkit-transition: transform 1s;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .card__inner.is-flipped {
+            -o-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+        .card__face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            overflow: hidden;
+            box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .card__face--front {
+            background-image: linear-gradient(25deg, rgb(191, 191, 155), #Ffffff, #Ffffff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card__face--front h2 {
+            color: #000000;
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .card__face--front h3 {
+            color: #3d3d3d;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .card__face--back {
+            background-image: linear-gradient(-15deg, #Ffffff, #Ffffff, rgb(191, 191, 155));
+            ;
+            -o-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+        .card__content {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card__header {
+            position: relative;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .card__header:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-color: rgb(135, 135, 99);
+            z-index: -1;
+            border-radius: 0px 0px 60% 0px;
+        }
+
+        .image_card-front {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            border: 4px solid #fff;
+            object-fit: cover;
+        }
+
+        .image_card-back {
+            display: block;
+            padding: 0;
+            margin: 0 auto 10px;
+            border-radius: 25px;
+            background-color: #f0f0f0;
+            border: 4px solid #fff;
+            object-fit: cover;
+        }
+
+        .card__header .col-4 {
+            padding: 0;
+        }
+
+        .card__header h2 {
+            color: #000000;
+            font-size: 2em;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .card__header h3 {
+            color: #575757;
+            margin-top: 0.5em;
+            font-size: 1.0em;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .card__body {
+            padding: 1em;
+            text-align: center;
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+        .role {
+            color: #9b896d !important;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!--======================================== navigation、progess bar ============================================-->
+    <script src="loadHeader.js"></script>
+    <!--======================================== header background  ================================================-->
+    <div id="background">
+        <img class="filter" src="images/bg1.jpg">
+        <div class="bg-text">
+            <h1 data-text="Team" class="bg-h1" style="box-shadow: none">
+                关于我们
+            </h1>
+        </div>
+    </div>
+    
+
+    <!--=================================================== 正文 ====================================================-->
+    <br><br><br>
+    <div class="container" z-index="1">
+        <br><br>
+        <div class="row mt-3 d-flex justify-content-evenly relative">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                <div class="card_team_teacher">
+                    <div class="card__inner_teacher">
+                        <div class="card__face card__face--front_teacher">
+                            <div>
+                                <img class="image_card-front" src="images/m0.jpg">
+                                <h2>卢立涛</h2>
+                                <h3 class="role">指导老师</h3>
+                                <h3>教育学部&ensp;副教授</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                <div class="card_team">
+                    <div class="card__inner">
+                        <div class="card__face card__face--front">
+                            <div>
+                                <img class="image_card-front" src="images/m1.jpg">
+                                <h2>李薇薇</h2>
+                                <h3 class="role">负责人</h3>
+                                <h3>未来教育学院</h3>
+                                <h3>数学与应用数学（公费师范）</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="row align-middle">
+                                        <div class="col-4">
+                                            <img class="w-100 image_card-back" src="images/m1.jpg">
+                                        </div>
+                                        <div class="col-8">
+                                            <h2>李薇薇</h2>
+                                            <h3>数学与应用数学（公费师范）</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <b>任务：</b><br>
+                                    访谈转录及分析<br>学术报告撰写<br>正式问卷制作、分析<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12  mb-4 mb-lg-0">
+                <div class="card_team">
+                    <div class="card__inner">
+                        <div class="card__face card__face--front">
+                            <div>
+                                <img class="image_card-front" src="images/m2.jpg">
+                                <h2>闻友婷</h2>
+                                <h3 class="role">成员</h3>
+                                <h3>未来教育学院</h3>
+                                <h3>数学与应用数学（公费师范）</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="row align-middle">
+                                        <div class="col-4">
+                                            <img class="w-100 image_card-back" src="images/m2.jpg">
+                                        </div>
+                                        <div class="col-8">
+                                            <h2>闻友婷</h2>
+                                            <h3>数学与应用数学（公费师范）</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <b>任务：</b><br>
+                                    访谈转录及分析<br>正式问卷制作、分析<br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row mt-3 d-flex justify-content-evenly relative">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                <div class="card_team">
+                    <div class="card__inner">
+                        <div class="card__face card__face--front">
+                            <div>
+                                <img class="image_card-front" src="images/m3.jpg">
+                                <h2>杨欣</h2>
+                                <h3 class="role">成员</h3>
+                                <h3>未来教育学院</h3>
+                                <h3>数学与应用数学（公费师范）</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="row align-middle">
+                                        <div class="col-4">
+                                            <img class="w-100 image_card-back" src="images/m3.jpg">
+                                        </div>
+                                        <div class="col-8">
+                                            <h2>杨欣</h2>
+                                            <h3>数学与应用数学（公费师范）</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <b>任务：</b><br>
+                                    访谈转录及分析<br>前调问卷制作<br>学术报告撰写<br>宣传公众号运营<br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12  mb-4 mb-lg-0">
+                <div class="card_team">
+                    <div class="card__inner">
+                        <div class="card__face card__face--front">
+                            <div>
+                                <img class="image_card-front" src="images/m4.jpg">
+                                <h2>吴心雨</h2>
+                                <h3 class="role">成员</h3>
+                                <h3>未来教育学院</h3>
+                                <h3>数学与应用数学（公费师范）</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="row align-middle">
+                                        <div class="col-4">
+                                            <img class="w-100 image_card-back" src="images/m4.jpg">
+                                        </div>
+                                        <div class="col-8">
+                                            <h2>吴心雨</h2>
+                                            <h3>数学与应用数学（公费师范）</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <b>任务：</b><br>
+                                    访谈转录及分析<br>前调问卷分析<br>正式问卷制作、分析<br>宣传网页搭建<br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                <div class="card_team">
+                    <div class="card__inner">
+                        <div class="card__face card__face--front">
+                            <div>
+                                <img class="image_card-front" src="images/m5.jpg">
+                                <h2>叶恩伶</h2>
+                                <h3 class="role">外编成员</h3>
+                                <h3>未来教育学院</h3>
+                                <h3>汉语言文学（公费师范）</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <div class="row align-middle">
+                                        <div class="col-4">
+                                            <img class="w-100 image_card-back" src="images/m5.jpg">
+                                        </div>
+                                        <div class="col-8">
+                                            <h2>叶恩伶</h2>
+                                            <h3>汉语言文学（公费师范）</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <b>任务：</b><br>
+                                    访谈转录及分析<br>学术报告撰写<br>宣传实录撰写<br>美工<br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <script>
+        // Team Page Cards 3D Animation
+        const cards = document.querySelectorAll(".card__inner");
+
+        // console.log(cards);
+
+        cards.forEach((card) => {
+            // First option
+            card.addEventListener("mouseenter", function (e) {
+                this.classList.toggle("is-flipped");
+            });
+        });
+    </script>
+
+
+    <!--=============================================== bootsrtap ===================================================-->
+    <script src="/static/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--======================================= back to top、 footer ================================================-->
+    <script src="loadFooter.js"></script>
+</body>
+
+</html>
